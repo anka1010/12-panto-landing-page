@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.link {
+  font-family: "Gilroy-Medium";
+  font-size: 1.8rem;
+  font-weight: 400;
+  height: 2.2rem;
+}
+
+.linkGroup {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+
+  svg {
+    fill: var(--white);
+  }
+}

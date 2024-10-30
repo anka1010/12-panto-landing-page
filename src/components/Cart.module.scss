@@ -1,0 +1,26 @@
+.cart {
+  position: relative;
+  width: 3.4rem;
+  height: 3.4rem;
+
+  svg {
+    fill: var(--white);
+  }
+}
+
+.itemsCount {
+  font-family: "Inter-SemiBold";
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 3px 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+
+  position: absolute;
+  top: 2px;
+  left: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
