@@ -1,0 +1,28 @@
+.bestsellers {
+  margin-top: 12rem;
+  padding-block: 5rem;
+  background-color: var(--color-secondary-neutral-01);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productType {
+  margin-top: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+
+  p {
+    padding: 0.7rem 2.1rem;
+  }
+}
+
+.carousel {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,16 @@
+.link {
+  font-family: "Gilroy-Medium";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 185%;
+  text-transform: capitalize;
+  color: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+
+  svg {
+    stroke: var(--color-primary);
+  }
+}

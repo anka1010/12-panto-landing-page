@@ -1,0 +1,39 @@
+.features {
+  max-width: 128rem;
+  margin-inline: auto;
+  margin-top: 12rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featureBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2.8rem;
+}
+
+.feature {
+  max-width: 28.4rem;
+}
+
+.h3 {
+  font-family: "Gilroy-Bold";
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: var(--color-secondary);
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.p {
+  font-family: "Gilroy-Regular";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 185%;
+  color: var(--color-secondary);
+  opacity: 0.8;
+  margin-bottom: 1.4rem;
+}
