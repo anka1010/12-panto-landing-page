@@ -4,7 +4,7 @@
 }
 
 .link {
-  font-family: "Gilroy-Medium";
+  font-family: var(--font-family);
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--white);
@@ -18,5 +18,10 @@
 
   svg {
     fill: var(--white);
+  }
+
+  &:hover,
+  &:focus {
+    color: red;
   }
 }

@@ -1,0 +1,129 @@
+.footer {
+  height: 46.2rem;
+  color: var(--color-secondary);
+  background-color: var(--color-secondary-neutral-01);
+  padding-top: 11.8rem;
+  padding-bottom: 5.6rem;
+  padding-inline: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    color: inherit;
+  }
+}
+
+.footerBlock {
+  width: min(100%, 106.4rem);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topRow {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  .leftBlock {
+    max-width: 29.3rem;
+
+    p {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 160%;
+      color: var(--color-secondary);
+      opacity: 0.8;
+      margin-top: 2.9rem;
+    }
+  }
+
+  .rightBlock {
+    display: flex;
+    width: min(100%, 61.9rem);
+
+    justify-content: space-between;
+    align-items: start;
+
+    .block {
+      width: 13.3rem;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-family: var(--font4);
+        font-weight: 400;
+        font-size: 1.7rem;
+        letter-spacing: -0.01em;
+        color: var(--color-primary-light);
+        margin-bottom: 2rem;
+      }
+
+      a {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #1e1e1e;
+        opacity: 0.8;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+
+        .icon {
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        svg {
+          fill: var(--color-dark-blue-1);
+        }
+      }
+    }
+  }
+}
+
+.bottomRow {
+  width: min(106.4rem, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftBlock {
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    color: var(--color-dark-blue-1);
+    opacity: 0.5;
+  }
+
+  .rightBlock {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: var(--color-secondary);
+    opacity: 0.8;
+
+    display: flex;
+    gap: 4rem;
+  }
+}
