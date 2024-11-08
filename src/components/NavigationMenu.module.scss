@@ -1,27 +1,60 @@
 .nav {
   display: flex;
   gap: 6.4rem;
+
+  a {
+    color: var(--white);
+  }
 }
 
 .link {
   font-family: var(--font-family);
   font-size: 1.8rem;
   font-weight: 400;
-  color: var(--white);
-  height: 2.2rem;
+  height: 3.2rem;
 }
 
 .linkGroup {
+  position: relative;
+  cursor: pointer;
   display: flex;
+  align-items: start;
   gap: 0.8rem;
-  align-items: center;
 
   svg {
     fill: var(--white);
+    margin-top: 0.3rem;
+  }
+
+  .submenu {
+    width: max-content;
+    position: absolute;
+    top: 2.8rem;
+    left: 0rem;
+    padding: 0.8rem 6.2rem 0.8rem 1.6rem;
+    border-top: unset;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    cursor: auto;
+    background: rgba(255, 255, 255, 0.15);
+
+    transform: translateY(-50%) scaleY(0);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+
+    a {
+      display: block;
+    }
+    a:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &:hover,
   &:focus {
-    color: red;
+    .submenu {
+      transform: translateY(0) scaleY(1);
+      opacity: 1;
+    }
   }
 }

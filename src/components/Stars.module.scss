@@ -1,0 +1,17 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.star {
+  svg {
+    fill: var(--color-primary-light);
+  }
+}
+
+.starEmpty {
+  svg {
+    opacity: 0.3;
+  }
+}

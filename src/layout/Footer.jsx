@@ -73,7 +73,9 @@ function Footer() {
           </div>
         </div>
         <div className={styles.bottomRow}>
-          <p className={styles.leftBlock}>Copyright © 2021</p>
+          <p className={styles.leftBlock}>
+            Copyright © {new Date().getFullYear()}
+          </p>
           <div className={styles.rightBlock}>
             <a href="#!">Terms & Conditions</a>
             <a href="#!">Privacy Policy</a>

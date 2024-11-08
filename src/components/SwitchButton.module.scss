@@ -1,0 +1,44 @@
+.switch {
+  height: 5.7rem;
+  background-color: var(--color-secondary-neutral-04);
+  margin-top: 3.2rem;
+  border-radius: 4.4rem;
+  padding: 0.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 185%;
+  color: var(--color-secondary);
+  opacity: 0.8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  width: 8.4rem;
+
+  input {
+    display: none;
+  }
+
+  label {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .active {
+    border-radius: 3.2rem;
+    background-color: var(--white);
+  }
+}

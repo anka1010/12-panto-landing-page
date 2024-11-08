@@ -1,7 +1,9 @@
-TODO - Hero - добавить выпадающее меню Furniture / добавить точки-выбор цвета
+TODO - Switch button
 TODO - Bestsellers - карусель
 TODO - Values - h2 - проверить разбивку по строкам
 TODO - Reviews - карусель
+TODO - Authentication - ???
+TODO - mobile view
 
 ----------------------------------------------------
 

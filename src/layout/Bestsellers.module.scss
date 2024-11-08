@@ -8,21 +8,55 @@
   align-items: center;
 }
 
-.productType {
-  margin-top: 3.2rem;
-
-  display: flex;
-  justify-content: center;
-
-  p {
-    padding: 0.7rem 2.1rem;
-  }
-}
-
-.carousel {
-  margin-top: 8rem;
+.sliderBlock {
+  margin-top: 13rem;
   margin-bottom: 6rem;
 
-  display: flex;
-  justify-content: center;
+  .slider {
+    width: min(120rem, 100vw - 8rem);
+    position: relative;
+
+    .sliderContainer {
+      overflow: hidden;
+
+      .slides {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+          display: none; /* for Chrome, Safari and Opera */
+        }
+
+        transition: all 0.3s ease-in;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+      }
+    }
+
+    .btn {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+
+      svg {
+        stroke: var(--color-secondary);
+      }
+    }
+
+    .btnLeft {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .btnRight {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
 }

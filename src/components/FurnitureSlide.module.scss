@@ -1,0 +1,101 @@
+.slide {
+  height: 49.2rem;
+  width: 26.8rem;
+  background-color: transparent;
+  border-radius: 2rem;
+  position: relative;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+
+  .topBlock {
+    height: 28.9rem;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    position: relative;
+
+    .backgroundBlock {
+      height: 23.9rem;
+      width: 100%;
+      background-color: var(--color-secondary-neutral-05);
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+      position: absolute;
+      bottom: 0;
+    }
+
+    img {
+      position: absolute;
+      left: 2.4rem;
+      top: 0;
+    }
+  }
+
+  .bottomBlock {
+    background-color: var(--white);
+    padding-inline: 2.1rem;
+    padding-top: 1.37rem;
+    padding-bottom: 2.74rem;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    .productType {
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      color: var(--color-secondary-neutral-02);
+      margin-bottom: 0.6rem;
+    }
+
+    .productName {
+      font-family: var(--third-family);
+      font-weight: 600;
+      font-size: 2.1rem;
+      text-transform: capitalize;
+      color: var(--color-dark-blue);
+      margin-bottom: 0.6rem;
+    }
+
+    .stars {
+      margin-top: 0.6rem;
+      margin-bottom: 3.65rem;
+    }
+
+    .priceRow {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .price {
+        font-family: var(--third-family);
+        font-weight: 600;
+        font-size: 2.1rem;
+        color: var(--color-dark-blue);
+
+        display: flex;
+        align-items: start;
+        gap: 0.3rem;
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
+
+      .btnAddToCart {
+        width: 4.8rem;
+        height: 4.8rem;
+        background-color: var(--color-dark-blue);
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+}
