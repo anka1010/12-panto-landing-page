@@ -1,6 +1,6 @@
 import styles from "./ButtonRound.module.scss";
 
-function ButtonArrow({ children, onClick = undefined }) {
+function ButtonRound({ onClick = undefined, children }) {
   return (
     <button className={styles.btn} onClick={onClick}>
       {children}
@@ -8,4 +8,4 @@ function ButtonArrow({ children, onClick = undefined }) {
   );
 }
 
-export default ButtonArrow;
+export default ButtonRound;

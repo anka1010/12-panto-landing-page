@@ -147,6 +147,10 @@
   flex-direction: column;
   gap: 2rem;
 
+  h2 {
+    max-width: 41.3rem;
+  }
+
   .text {
     font-family: var(--second-family);
     font-weight: 400;

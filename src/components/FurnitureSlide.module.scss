@@ -82,15 +82,10 @@
         }
       }
 
-      .btnAddToCart {
+      button {
         width: 4.8rem;
         height: 4.8rem;
         background-color: var(--color-dark-blue);
-        border-radius: 50%;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
         svg {
           fill: var(--white);

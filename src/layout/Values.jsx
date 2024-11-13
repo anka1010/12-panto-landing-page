@@ -8,13 +8,13 @@ function Values() {
         type="left"
         value="experiences"
         header="we provide you the best experience"
-        text="You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials"
+        text="You don’t have to worry about the final result because all of our sample interiors are designed by professionals and our products are made with premium quality materials"
       ></Value>
       <Value
         type="right"
         value="Materials"
-        header="Very serious materials for making furniture"
-        text="Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price"
+        header="High quality materials for making furniture"
+        text="At Panto we are very serious about not only good looking product but quality as well "
       ></Value>
     </div>
   );

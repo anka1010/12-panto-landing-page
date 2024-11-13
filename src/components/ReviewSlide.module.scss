@@ -1,0 +1,108 @@
+.slide {
+  width: 37rem;
+  height: 53rem;
+  flex-shrink: 0;
+  position: relative;
+  scroll-snap-align: start;
+  position: relative;
+
+  .slideBlock {
+    height: 47.6rem;
+    border-radius: 1.8rem;
+    position: relative;
+    z-index: 2;
+
+    .backgroundImg {
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+
+      object-fit: cover;
+    }
+
+    .reviewBlock {
+      width: 33.4rem;
+      height: 23.9rem;
+      background-image: url("./images/reviews/union.svg");
+      position: absolute;
+      bottom: 1.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .userImg {
+        width: 5rem;
+        height: 5rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1.3rem;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 10;
+        }
+
+        .shadow {
+          z-index: 9;
+          bottom: -5px;
+          opacity: 0.5;
+          filter: blur(1.3rem);
+        }
+      }
+
+      .userName {
+        font-family: var(--font3);
+        font-weight: 400;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        text-align: center;
+        color: var(--color-secondary);
+        margin-bottom: 0.6rem;
+      }
+
+      .city {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--color-secondary);
+        opacity: 0.6;
+        margin-bottom: 2.2rem;
+      }
+
+      .reviewText {
+        max-width: 25.2rem;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 1.4rem;
+        text-align: center;
+        color: var(--color-secondary);
+        opacity: 0.8;
+      }
+
+      .stars {
+        margin-top: auto;
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+
+  .shadow {
+    position: absolute;
+    bottom: 2.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4.4rem;
+    width: 30rem;
+    height: 38rem;
+    filter: blur(1.6rem);
+    opacity: 0.4;
+    z-index: 1;
+  }
+}

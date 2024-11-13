@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import ButtonRound from "./ButtonRound";
 
-function Slider({ styles, slideWidth = 0, children }) {
+function Slider({ styles, slideWidth = 0, selectedOption = 0, children }) {
   const slidesEl = useRef();
+  // assume slide width is in rem always
   const slideWidthPx =
     slideWidth *
     parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -26,7 +27,7 @@ function Slider({ styles, slideWidth = 0, children }) {
           </svg>
         </ButtonRound>
       </div>
-      <div className={styles.sliderContainer}>
+      <div className={styles.sliderContainer} key={selectedOption}>
         <div className={styles.slides} ref={slidesEl}>
           {children}
         </div>

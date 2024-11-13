@@ -17,6 +17,7 @@
   line-height: 185%;
   color: var(--color-secondary);
   opacity: 0.8;
+  position: relative;
 
   display: flex;
   align-items: center;
@@ -25,6 +26,7 @@
 
 .option {
   width: 8.4rem;
+  z-index: 10;
 
   input {
     display: none;
@@ -36,9 +38,16 @@
     align-items: center;
     justify-content: center;
   }
+}
 
-  .active {
-    border-radius: 3.2rem;
-    background-color: var(--white);
-  }
+.active {
+  width: 8.4rem;
+  height: 100%;
+  border-radius: 3.2rem;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  z-index: 9;
+
+  transition: all 0.2s ease-in-out;
 }

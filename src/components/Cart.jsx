@@ -2,7 +2,7 @@ import styles from "./Cart.module.scss";
 
 function Cart({ itemsCount = 0 }) {
   return (
-    <a href="!#" className={styles.cart}>
+    <a href="#!" className={styles.cart}>
       <svg
         width="34"
         height="34"

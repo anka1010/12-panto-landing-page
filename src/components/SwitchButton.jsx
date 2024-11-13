@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import styles from "./SwitchButton.module.scss";
+import { useEffect } from "react";
 
 function SwitchButton({
   options = [],
@@ -6,6 +8,17 @@ function SwitchButton({
   selectedOption,
   setSelectedOption,
 }) {
+  const activeEl = useRef();
+
+  useEffect(() => {
+    // assume button width is in rem always
+    const buttonWidth =
+      8.4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    activeEl.current.style.transform = `translateX(${
+      buttonWidth * selectedOption
+    }px)`;
+  }, [selectedOption]);
+
   return (
     <div className={styles.switch}>
       <fieldset className={styles.options}>
@@ -17,16 +30,14 @@ function SwitchButton({
               name={switchType}
               value={option}
               checked={index === selectedOption}
-              onChange={() => setSelectedOption(index)}
+              onChange={() => {
+                setSelectedOption(index);
+              }}
             />
-            <label
-              htmlFor={option}
-              className={`${selectedOption === index ? styles.active : ""}`}
-            >
-              {option}
-            </label>
+            <label htmlFor={option}>{option}</label>
           </div>
         ))}
+        <div className={styles.active} ref={activeEl}></div>
       </fieldset>
     </div>
   );

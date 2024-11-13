@@ -17,44 +17,49 @@
 .linkGroup {
   position: relative;
   cursor: pointer;
-  display: flex;
-  align-items: start;
-  gap: 0.8rem;
+
+  .group {
+    display: flex;
+    align-items: start;
+    gap: 0.8rem;
+  }
 
   svg {
     fill: var(--white);
     margin-top: 0.3rem;
   }
+}
 
-  .submenu {
-    width: max-content;
-    position: absolute;
-    top: 2.8rem;
-    left: 0rem;
-    padding: 0.8rem 6.2rem 0.8rem 1.6rem;
-    border-top: unset;
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
-    cursor: auto;
-    background: rgba(255, 255, 255, 0.15);
+.submenu {
+  width: max-content;
+  position: absolute;
+  top: 2.8rem;
+  left: 0rem;
+  padding: 0.8rem 6.2rem 0.8rem 1.6rem;
+  border-top: unset;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  cursor: auto;
+  background: rgba(255, 255, 255, 0.15);
+  border: 0.86px solid rgba(255, 255, 255, 0.3);
 
-    transform: translateY(-50%) scaleY(0);
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 
-    a {
-      display: block;
-    }
-    a:not(:last-child) {
-      margin-bottom: 1.6rem;
-    }
+  a {
+    display: block;
   }
-
-  &:hover,
-  &:focus {
-    .submenu {
-      transform: translateY(0) scaleY(1);
-      opacity: 1;
-    }
+  a:not(:last-child) {
+    margin-bottom: 1.6rem;
   }
+}
+
+.submenuOpen {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenuClose {
+  opacity: 0;
+  transform: translateY(-1000px);
 }

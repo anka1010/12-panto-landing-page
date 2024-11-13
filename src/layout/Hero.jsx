@@ -19,8 +19,8 @@ function Hero() {
         <br /> minimalistic & modern
       </h1>
       <p className={styles.description}>
-        Turn your room with panto into a lot more minimalist
-        <br /> and modern with ease and speed
+        Turn your room with Panto into a lot more minimalistic
+        <br /> and modern with ease in no time
       </p>
       <div className={styles.search}>
         <input
