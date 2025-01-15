@@ -1,35 +1,42 @@
 @font-face {
   font-family: "Gilroy-Regular";
+  font-weight: 400;
   src: url("./assets/fonts/Gilroy-Regular.ttf");
 }
 
 @font-face {
   font-family: "Gilroy-Medium";
+  font-weight: 500;
   src: url("./assets/fonts/Gilroy-Medium.ttf");
 }
 
 @font-face {
   font-family: "Gilroy-SemiBold";
+  font-weight: 600;
   src: url("./assets/fonts/Gilroy-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Gilroy-Bold";
+  font-weight: 700;
   src: url("./assets/fonts/Gilroy-Bold.ttf");
 }
 
 @font-face {
   font-family: "Inter-Regular";
+  font-weight: 400;
   src: url("./assets/fonts/Inter_18pt-Regular.ttf");
 }
 
 @font-face {
   font-family: "Inter-SemiBold";
+  font-weight: 600;
   src: url("./assets/fonts/Inter_18pt-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "DMSans-Regular";
+  font-weight: 400;
   src: url("./assets/fonts/DMSans-Regular.ttf");
 }
 
@@ -163,7 +170,7 @@ legend {
 /* Remove all animations, transitions etc. */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-    scroll-behaviour: auto;
+    scroll-behavior: auto;
   }
 
   *,
@@ -172,7 +179,7 @@ legend {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behaviour: auto !important;
+    scroll-behavior: auto !important;
   }
 }
 
@@ -184,7 +191,7 @@ legend {
 }
 
 .h2 {
-  font-family: "Gilroy-Bold";
+  font-family: var(--font3);
   font-weight: 400;
   font-size: 4.2rem;
   color: var(--color-secondary);
@@ -193,7 +200,7 @@ legend {
 }
 
 .h3 {
-  font-family: "Gilroy-SemiBold";
+  font-family: var(--font5);
   font-weight: 400;
   font-size: 1.8rem;
   letter-spacing: 0.17em;
