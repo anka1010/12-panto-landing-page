@@ -172,7 +172,7 @@ function Bestsellers() {
   );
 
   return (
-    <div className={styles.bestsellers}>
+    <div className={styles.bestsellers} id="bestsellers">
       <h2 className="h2">Best Selling Product</h2>
       <SwitchButton
         options={productTypes}

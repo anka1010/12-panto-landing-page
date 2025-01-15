@@ -29,12 +29,12 @@ function NavigationMenu() {
             submenuOpen ? styles.submenuOpen : styles.submenuClose
           }`}
         >
-          <a href="#!">Beds</a>
-          <a href="#!">Chairs</a>
-          <a href="#!">All</a>
+          <a href="#bestsellers">Beds</a>
+          <a href="#bestsellers">Chairs</a>
+          <a href="#bestsellers">All</a>
         </div>
       </div>
-      <a href="#!" className={styles.link}>
+      <a href="#bestsellers" className={styles.link}>
         Shop
       </a>
       <a href="#!" className={styles.link}>
