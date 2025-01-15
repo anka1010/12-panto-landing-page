@@ -1,14 +1,37 @@
+import { useDispatch } from "react-redux";
+import { addToCart } from "../features/cart/cartSlice";
 import Stars from "./Stars";
-import styles from "./FurnitureSlide.module.scss";
 import ButtonRound from "./ButtonRound";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import { Zoom } from "react-toastify";
+
+import styles from "./FurnitureSlide.module.scss";
 
 function FurnitureSlide({
+  id,
   imgSrc,
   productType,
   productName,
   price,
-  starsCount,
+  stars,
 }) {
+  const dispatch = useDispatch();
+
+  const notify = () => {
+    toast.success("Added to cart", {
+      // position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Zoom,
+    });
+  };
+
   return (
     <div className={styles.slide}>
       <div className={styles.topBlock}>
@@ -21,7 +44,7 @@ function FurnitureSlide({
           {productName}
         </a>
         <div className={styles.stars}>
-          <Stars starsCount={starsCount} />
+          <Stars starsCount={stars} />
         </div>
         <div className={styles.priceRow}>
           <p className={styles.price}>
@@ -30,7 +53,18 @@ function FurnitureSlide({
           </p>
           <ButtonRound
             onClick={() => {
-              console.log("AddToCart");
+              dispatch(
+                addToCart({
+                  id,
+                  imgSrc,
+                  productType,
+                  productName,
+                  price,
+                  stars,
+                  count: 1,
+                })
+              );
+              notify();
             }}
           >
             <svg
@@ -43,6 +77,7 @@ function FurnitureSlide({
               <path d="M22.1342 12.2102C22.1342 11.4411 21.5107 10.8176 20.7415 10.8176H13.7782V3.85427C13.7782 3.08512 13.1547 2.46161 12.3856 2.46161C11.6164 2.46161 10.9929 3.08512 10.9929 3.85427V10.8176H4.02962C3.26048 10.8176 2.63696 11.4411 2.63696 12.2102C2.63696 12.9794 3.26048 13.6029 4.02962 13.6029H10.9929V20.5662C10.9929 21.3353 11.6164 21.9588 12.3856 21.9588C13.1547 21.9588 13.7782 21.3353 13.7782 20.5662V13.6029H20.7415C21.5107 13.6029 22.1342 12.9794 22.1342 12.2102Z" />
             </svg>
           </ButtonRound>
+          <ToastContainer />
         </div>
       </div>
     </div>

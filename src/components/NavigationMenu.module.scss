@@ -5,6 +5,10 @@
   a {
     color: var(--white);
   }
+
+  @include screenSm {
+    display: none;
+  }
 }
 
 .link {

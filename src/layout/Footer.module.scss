@@ -32,6 +32,10 @@
   justify-content: space-between;
   align-items: start;
 
+  @include screenSmMax {
+    gap: 2rem;
+  }
+
   .leftBlock {
     max-width: 29.3rem;
 

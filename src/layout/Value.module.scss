@@ -14,7 +14,7 @@
   }
 
   .shadow {
-    opacity: 50%;
+    opacity: 40%;
     filter: blur(20px);
     position: absolute;
     z-index: 9;
@@ -26,17 +26,22 @@
     position: relative;
     margin-left: -6.5rem;
 
+    @include screenMd {
+      width: 58.2rem;
+      height: 43.2rem;
+    }
+
     .img1 {
-      width: 62.9rem;
-      height: 44.5rem;
+      width: 86.4%;
+      height: 82.2%;
       border-radius: 2rem;
       position: absolute;
       top: 6.6rem;
       left: 3.8rem;
 
       .shadow {
-        width: 50rem;
-        height: 38rem;
+        width: 68.68%;
+        height: 70.2%;
         border-radius: 4.9rem;
         bottom: -4rem;
         left: 6rem;
@@ -44,8 +49,8 @@
     }
 
     .rect1 {
-      width: 49.5rem;
-      height: 42.2rem;
+      width: 68%;
+      height: 78%;
       border-radius: 2rem;
       background: var(--color-secondary-neutral-01);
       position: absolute;
@@ -55,8 +60,8 @@
     }
 
     .rect2 {
-      width: 49.5rem;
-      height: 30.1rem;
+      width: 91.5%;
+      height: 55.6%;
       border-radius: 2rem;
       background: var(--color-secondary-neutral-01);
       position: absolute;
@@ -72,35 +77,41 @@
     position: relative;
     margin-right: -22.2rem;
 
+    @include screenMd {
+      width: 74.5rem;
+      height: 49.1rem;
+    }
+
     .img1 {
-      width: 22.3rem;
-      height: 22.9rem;
+      width: 23.9%;
+      height: 37.3%;
       border-radius: 1.4rem;
       position: absolute;
       top: 0rem;
       left: 0rem;
 
       .shadow {
-        width: 17.6rem;
-        height: 18.3rem;
+        width: 50%;
+        height: 60%;
         border-radius: 2.9rem;
         bottom: -2.1rem;
         left: 50%;
         transform: translateX(-50%);
+        opacity: 50%;
       }
     }
 
     .img2 {
-      width: 22.3rem;
-      height: 31.7rem;
+      width: 23.9%;
+      height: 51.6%;
       border-radius: 1.4rem;
       position: absolute;
       bottom: 2.1rem;
       left: 0rem;
 
       .shadow {
-        width: rem;
-        height: 30.1rem;
+        width: 50%;
+        height: 60%;
         border-radius: 2.9rem;
         bottom: -2.1rem;
         left: 50%;
@@ -109,16 +120,16 @@
     }
 
     .img3 {
-      width: 62.9rem;
-      height: 44.5rem;
+      width: 67.5%;
+      height: 72.5%;
       border-radius: 2rem;
       position: absolute;
       bottom: 3rem;
       right: 3.8rem;
 
       .shadow {
-        width: 50rem;
-        height: 38rem;
+        width: 50%;
+        height: 60%;
         border-radius: 4.9rem;
         bottom: -2.1rem;
         left: 2.7rem;
@@ -126,8 +137,8 @@
 
       .rectangle {
         border-radius: 2rem;
-        width: 49.5rem;
-        height: 42.2rem;
+        width: 53.1%;
+        height: 68.7%;
         background: var(--color-secondary-neutral-01);
         position: absolute;
         left: 17.2rem;
@@ -146,6 +157,14 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @include screenXL {
+    margin-left: 4rem;
+  }
+
+  @include screenMd {
+    margin-right: 2rem;
+  }
 
   h2 {
     max-width: 41.3rem;

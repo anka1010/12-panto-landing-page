@@ -3,6 +3,10 @@
   margin-inline: auto;
   margin-top: 12rem;
 
+  @include screenXL {
+    padding-inline: 2rem;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;

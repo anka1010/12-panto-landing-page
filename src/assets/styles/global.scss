@@ -1,0 +1,28 @@
+$screenXL: 1400px;
+$screenMd: 1265px;
+$screenSmMax: 990px;
+$screenSm: 890px;
+
+@mixin screenXL {
+  @media (max-width: $screenXL) {
+    @content;
+  }
+}
+
+@mixin screenMd {
+  @media (max-width: $screenMd) {
+    @content;
+  }
+}
+
+@mixin screenSmMax {
+  @media (max-width: $screenSmMax) {
+    @content;
+  }
+}
+
+@mixin screenSm {
+  @media (max-width: $screenSm) {
+    @content;
+  }
+}

@@ -5,7 +5,27 @@
   padding-inline: 8rem;
   padding-top: 4rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #fff 100%),
-    url("/images/heroImg.jpg");
+    no-repeat url("/images/heroImg.jpg");
+  background-position: center;
+
+  @include screenSm {
+    height: 67rem;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 86.13%,
+        #fff 100%
+      ),
+      no-repeat url("/images/heroImgMobile.jpg");
+    background-position: center;
+
+    padding-inline: 3rem;
+  }
+}
+
+.logoMenu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .header {
@@ -23,6 +43,12 @@
   text-transform: capitalize;
   text-align: center;
   margin-top: 8.6rem;
+
+  @include screenSm {
+    font-size: 4rem;
+    line-height: 120%;
+    margin-top: 6.6rem;
+  }
 }
 
 .description {
@@ -34,6 +60,10 @@
   color: var(--white);
   opacity: 0.8;
   margin-top: 1.4rem;
+
+  @include screenSm {
+    display: none;
+  }
 }
 
 .search {
@@ -42,6 +72,11 @@
   position: relative;
   margin-top: 4.5rem;
   margin-inline: auto;
+
+  @include screenSm {
+    width: min(90%, 34.4rem);
+    margin-top: 8.5rem;
+  }
 }
 
 .searchInput {
@@ -59,6 +94,11 @@
 
   &::placeholder {
     opacity: 0.8;
+
+    @include screenSm {
+      color: var(--white);
+      opacity: 50%;
+    }
   }
 }
 

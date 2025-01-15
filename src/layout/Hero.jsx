@@ -1,18 +1,20 @@
-import Cart from "../components/Cart";
+import CartIcon from "../features/cart/CartIcon";
 import Logo from "../components/Logo";
 import NavigationMenu from "../components/NavigationMenu";
+import MobileMenu from "../components/MobileMenu";
 
 import styles from "./Hero.module.scss";
 
 function Hero() {
-  const itemsCount = 0;
-
   return (
     <div className={styles.hero}>
       <header className={styles.header}>
-        <Logo />
+        <div className={styles.logoMenu}>
+          <MobileMenu />
+          <Logo />
+        </div>
         <NavigationMenu />
-        <Cart itemsCount={itemsCount} />
+        <CartIcon />
       </header>
       <h1 className={styles.slogan}>
         Make your interior more

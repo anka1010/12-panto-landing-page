@@ -190,11 +190,12 @@ function Bestsellers() {
             {productsFiltered.map((product) => (
               <FurnitureSlide
                 key={product.id}
+                id={product.id}
                 imgSrc={product.imgSrc}
                 productType={product.type}
                 productName={product.productName}
                 price={product.price}
-                starsCount={product.stars}
+                stars={product.stars}
               />
             ))}
           </Slider>
