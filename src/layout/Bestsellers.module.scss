@@ -10,6 +10,12 @@
   @include screenXSm {
     margin-top: 6rem;
   }
+
+  @include screenXXSm {
+    :global(.h2) {
+      text-align: center;
+    }
+  }
 }
 
 .sliderBlock {
