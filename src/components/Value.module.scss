@@ -50,7 +50,8 @@
     .img1 {
       width: 86.4%;
       height: 82.2%;
-      border-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
       position: absolute;
       top: 6.6rem;
       left: 3.8rem;
@@ -186,6 +187,10 @@
     margin-right: 2rem;
   }
 
+  @include screenXSm {
+    width: calc(100vw - 8rem);
+  }
+
   h2 {
     max-width: 41.3rem;
   }
@@ -213,6 +218,7 @@
 
     @include screenXSm {
       margin-top: 0;
+      margin-inline: auto;
     }
   }
 
@@ -226,6 +232,7 @@
 
     @include screenXSm {
       margin-top: 0;
+      margin-inline: auto;
     }
   }
 }
