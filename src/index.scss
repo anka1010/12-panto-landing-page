@@ -1,43 +1,59 @@
 @font-face {
   font-family: "Gilroy-Regular";
+  font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/Gilroy-Regular.ttf");
+  src: url("./assets/fonts/gilroy-regular-webfont.woff") format("woff"),
+    url("./assets/fonts/gilroy-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/Gilroy-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gilroy-Medium";
   font-weight: 500;
-  src: url("./assets/fonts/Gilroy-Medium.ttf");
+  src: url("./assets/fonts/gilroy-medium-webfont.woff") format("woff"),
+    url("./assets/fonts/gilroy-medium-webfont.woff2") format("woff2"),
+    url("./assets/fonts/Gilroy-Medium.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gilroy-SemiBold";
   font-weight: 600;
-  src: url("./assets/fonts/Gilroy-SemiBold.ttf");
+  src: url("./assets/fonts/gilroy-semibold-webfont.woff") format("woff"),
+    url("./assets/fonts/gilroy-semibold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/Gilroy-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gilroy-Bold";
   font-weight: 700;
-  src: url("./assets/fonts/Gilroy-Bold.ttf");
+  src: url("./assets/fonts/gilroy-bold-webfont.woff") format("woff"),
+    url("./assets/fonts/gilroy-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/Gilroy-Bold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inter-Regular";
   font-weight: 400;
   src: url("./assets/fonts/Inter_18pt-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inter-SemiBold";
   font-weight: 600;
   src: url("./assets/fonts/Inter_18pt-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "DMSans-Regular";
   font-weight: 400;
   src: url("./assets/fonts/DMSans-Regular.ttf");
+  font-display: swap;
 }
 
 :root {
