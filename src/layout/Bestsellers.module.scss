@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include screenXSm {
+    margin-top: 6rem;
+  }
 }
 
 .sliderBlock {

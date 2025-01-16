@@ -9,8 +9,8 @@ function Footer() {
           <div className={styles.leftBlock}>
             <Logo />
             <p>
-              The advantage of hiring a workspace with us is that givees you
-              comfortable service and all-around facilities.
+              The advantage of hiring a workspace with us gives you comfortable
+              service and all-around facilities.
             </p>
           </div>
           <div className={styles.rightBlock}>

@@ -3,13 +3,24 @@
   margin-inline: auto;
   margin-top: 12rem;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @include screenXL {
     padding-inline: 2rem;
   }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include screenXSm {
+    margin-top: 6rem;
+    flex-direction: column;
+
+    :global(.h2) {
+      width: 28.4rem;
+      margin-bottom: 3rem;
+      margin-right: unset;
+    }
+  }
 }
 
 .featureBlock {
@@ -17,6 +28,10 @@
   justify-content: space-between;
   align-items: start;
   gap: 2.8rem;
+
+  @include screenXSm {
+    flex-direction: column;
+  }
 }
 
 .feature {

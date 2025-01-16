@@ -1,3 +1,7 @@
 .values {
   margin-top: 24rem;
+
+  @include screenXSm {
+    margin-top: 6rem;
+  }
 }

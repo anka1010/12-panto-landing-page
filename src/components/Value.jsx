@@ -1,4 +1,4 @@
-import ButtonLink from "../components/ButtonLink";
+import ButtonLink from "./ButtonLink";
 import styles from "./Value.module.scss";
 
 function Value({ type, value, header, text, img1, img2, img3 }) {

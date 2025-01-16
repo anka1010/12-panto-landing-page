@@ -6,6 +6,17 @@
   flex-direction: column;
   align-items: center;
 
+  @include screenXSm {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  @include screenXXSm {
+    :global(.h2) {
+      text-align: center;
+    }
+  }
+
   h3 {
     margin-bottom: 2rem;
   }

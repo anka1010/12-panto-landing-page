@@ -1,4 +1,4 @@
-import Value from "./Value";
+import Value from "../components/Value";
 import styles from "./Values.module.scss";
 
 function Values() {

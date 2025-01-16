@@ -2,6 +2,8 @@ $screenXL: 1400px;
 $screenMd: 1265px;
 $screenSmMax: 990px;
 $screenSm: 890px;
+$screenXSm: 690px;
+$screenXXSm: 440px;
 
 @mixin screenXL {
   @media (max-width: $screenXL) {
@@ -23,6 +25,18 @@ $screenSm: 890px;
 
 @mixin screenSm {
   @media (max-width: $screenSm) {
+    @content;
+  }
+}
+
+@mixin screenXSm {
+  @media (max-width: $screenXSm) {
+    @content;
+  }
+}
+
+@mixin screenXXSm {
+  @media (max-width: $screenXXSm) {
     @content;
   }
 }

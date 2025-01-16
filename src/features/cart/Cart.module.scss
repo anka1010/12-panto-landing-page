@@ -1,7 +1,7 @@
 .cart {
   font-family: var(--font-family);
   color: var(--color-secondary);
-  width: max(30vw, 40rem);
+  width: clamp(30rem, 80vw, 50rem);
   position: fixed;
   top: 0;
   bottom: 0;

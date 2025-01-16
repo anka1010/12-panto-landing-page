@@ -2,11 +2,22 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 24rem;
+
+  @include screenXSm {
+    margin-bottom: 4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 7rem;
+    }
+  }
 }
 
 .blockImg {
+  @include screenXSm {
+    display: none;
+  }
+
   img {
-    max-width: 100%;
     object-fit: cover;
     border-radius: inherit;
     position: absolute;
@@ -29,6 +40,11 @@
     @include screenMd {
       width: 58.2rem;
       height: 43.2rem;
+    }
+
+    @include screenSm {
+      width: 46rem;
+      height: 35rem;
     }
 
     .img1 {
@@ -80,6 +96,11 @@
     @include screenMd {
       width: 74.5rem;
       height: 49.1rem;
+    }
+
+    @include screenSm {
+      width: 56rem;
+      height: 35rem;
     }
 
     .img1 {
@@ -185,9 +206,25 @@
 
   &Left {
     margin-top: 8.3rem;
+
+    @include screenSm {
+      margin-top: 5.3rem;
+    }
+
+    @include screenXSm {
+      margin-top: 0;
+    }
   }
 
   &Right {
     margin-top: 12.4rem;
+
+    @include screenSm {
+      margin-top: 4.3rem;
+    }
+
+    @include screenXSm {
+      margin-top: 0;
+    }
   }
 }
