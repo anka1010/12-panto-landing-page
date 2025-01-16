@@ -1,6 +1,7 @@
 .bestsellers {
   margin-top: 12rem;
-  padding-block: 5rem;
+  padding-top: 4.7rem;
+  padding-bottom: 6.3rem;
   background-color: var(--color-secondary-neutral-01);
 
   display: flex;
@@ -88,6 +89,10 @@
 
     display: flex;
     align-items: center;
+  }
+
+  .link {
+    font-size: 1.8rem;
   }
 }
 

@@ -75,6 +75,7 @@
   --font-family: "Gilroy-Medium", sans-serif;
   --second-family: "Gilroy-Regular", sans-serif;
   --third-family: "Inter-SemiBold", sans-serif;
+  --font2: "Inter-Regular", sans-serif;
   --font3: "Gilroy-Bold", sans-serif;
   --font4: "DM Sans", sans-serif;
   --font5: "Gilroy-SemiBold", sans-serif;
@@ -209,7 +210,7 @@ legend {
 
 .h2 {
   font-family: var(--font3);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 4.2rem;
   color: var(--color-secondary);
   text-transform: capitalize;

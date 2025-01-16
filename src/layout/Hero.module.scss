@@ -36,10 +36,10 @@
 
 .slogan {
   font-family: var(--font3);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 8rem;
-  line-height: 130%;
-  letter-spacing: -1%;
+  line-height: 126%;
+  letter-spacing: -0.01em;
   text-transform: capitalize;
   text-align: center;
   margin-top: 8.6rem;
@@ -55,11 +55,18 @@
   font-family: var(--second-family);
   font-size: 2.4rem;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 170%;
   text-align: center;
   color: var(--white);
   opacity: 0.8;
   margin-top: 1.4rem;
+  margin-left: -1rem;
+
+  span {
+    display: inline-block;
+    padding-left: 2.7rem;
+    padding-top: 0.4rem;
+  }
 
   @include screenSm {
     display: none;
@@ -81,6 +88,7 @@
 
 .searchInput {
   font-family: var(--second-family);
+  font-weight: 400;
   font-size: 1.8rem;
   line-height: 150%;
   color: var(--white);
@@ -89,6 +97,7 @@
   border: 0.86px solid rgba(255, 255, 255, 0.6);
   border-radius: 4.2rem;
   padding: 0.8rem 0.8rem 0.8rem 2rem;
+  margin-top: -2px;
   backdrop-filter: blur(0.8rem);
   background: rgba(255, 255, 255, 0.15);
 
@@ -109,8 +118,8 @@
   background-color: var(--color-primary);
   position: absolute;
 
-  top: 50%;
-  right: 1.1rem;
+  top: 48%;
+  right: 0.8rem;
   transform: translateY(-50%);
 
   display: flex;

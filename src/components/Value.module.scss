@@ -35,7 +35,7 @@
     width: 72.8rem;
     height: 54.1rem;
     position: relative;
-    margin-left: -6.5rem;
+    margin-left: -3.7rem;
 
     @include screenMd {
       width: 58.2rem;
@@ -172,7 +172,6 @@
 
 .blockText {
   max-width: 55.6rem;
-  margin-left: 8rem;
   margin-right: auto;
 
   display: flex;
@@ -206,6 +205,7 @@
 
   &Left {
     margin-top: 8.3rem;
+    margin-left: 5.1rem;
 
     @include screenSm {
       margin-top: 5.3rem;
@@ -218,6 +218,7 @@
 
   &Right {
     margin-top: 12.4rem;
+    margin-left: 8.1rem;
 
     @include screenSm {
       margin-top: 4.3rem;

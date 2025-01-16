@@ -14,13 +14,14 @@
 .link {
   font-family: var(--font-family);
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   height: 3.2rem;
 }
 
 .linkGroup {
   position: relative;
   cursor: pointer;
+  margin-left: -1.8rem;
 
   .group {
     display: flex;

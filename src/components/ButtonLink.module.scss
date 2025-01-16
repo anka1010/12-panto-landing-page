@@ -8,9 +8,10 @@
 
   display: flex;
   align-items: center;
-  gap: 1.3rem;
+  gap: 1.8rem;
 
   svg {
+    padding-top: 2px;
     stroke: var(--color-primary);
   }
 }
